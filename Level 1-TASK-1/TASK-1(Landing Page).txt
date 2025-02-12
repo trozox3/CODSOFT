@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    
+    background-size: cover;
+    background-position: center;
+   background-image: url('https://static.vecteezy.com/system/resources/previews/007/340/656/non_2x/job-interview-illustration-free-vector.jpg'); /* Replace with your image URL */
+
+}
+/* styles1.css */
+.feature:hover {
+    box-shadow: 0 0 15px 5px rgba(70, 25, 25, 0.8); /* Yellow glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+#home{
+    top: 5;
+}
+header {
+    text-align: center;
+    padding: 100px;
+    margin-top: 60px; /* To avoid overlap with the navbar */
+   /* background-color: rgba(255, 255, 255, 0.8);*/
+   }
+
+header h1 {
+    font-size: 2.5em;
+    margin: 50px;;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #000000; 
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.feature {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+}
+
+.contact {
+    
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Landing Page</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Your journey to success starts here!</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </header>
+
+    <section id="features" class="features" style="color: white;">
+        <div class="feature">
+            <h2>Experience</h2>
+            <p>Experience is an essential aspect of life, shaping who we are and how we navigate the world. It encompasses the lessons we learn, the skills we develop, and the insights we gain through various encounters and challenges. Each experience, whether positive or negative, contributes to our personal growth and broadens our perspective.</p>
+        </div>
+        <div class="feature">
+            <h2>Service Guarantees</h2>
+            <p>Service guarantees are commitments made by service providers to assure customers of the quality and reliability of their services. These guarantees often include promises such as performance assurance, reliability, timely support, and data security. For instance, a service provider might guarantee a certain level of performance, such as a minimum uptime percentage, or promise to resolve customer issues within a specific timeframe.</p>
+        </div>
+        <div class="feature">
+            <h2>Team Members</h2>
+            <p>A successful team is composed of diverse individuals, each bringing unique strengths and perspectives to the table. Leaders guide and inspire the team, setting the vision and ensuring everyone works towards common goals. Planners organize tasks and create efficient workflows, keeping the team on track to meet deadlines. Creative members contribute innovative ideas and fresh perspectives, while communicators facilitate effective communication within the team and with external stakeholders.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="color: white;">Contact Us</h2>
+        <p style="color: white;">If you have any questions, feel free to reach out!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const featureElements = document.querySelectorAll(".feature");
+
+            featureElements.forEach(function(element) {
+                element.addEventListener("click", function() {
+                    element.classList.toggle("glow");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
