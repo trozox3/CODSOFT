@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGULNATH R - Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #665c4f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #665c4f;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#skills {
+    /*display: flex;*/
+    flex-wrap:wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#skills li::before {
+    content: '\1F3AF'; /* Checkmark symbol as an example */
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+#projects {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.project {
+    background: white;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+#experience {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #665c4f;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.job h3 {
+    margin-bottom: 5px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <button style="height: 15%;width: 18%;background-color: rgb(255, 0, 0); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            PORTFOLIO
+        </button>
+        <br>
+        <br>
+
+        <img src="https://img.freepik.com/premium-vector/programming-home_118813-4357.jpg" style="width: 15%; height: 15%;" alt="Header Image">
+        <h1>RAGULNATH R</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        
+        <p>Hi, I'm a passionate Web Developer with a strong foundation in front-end and back-end technologies. With experience in HTML, CSS, JavaScript, Node.js, and React, I specialize in building dynamic, responsive, and user-friendly web applications.
+
+            I love turning creative ideas into functional, high-performance websites and applications. Whether it's crafting pixel-perfect UI with CSS and React or building scalable server-side logic using Node.js, I thrive on solving complex problems and optimizing user experiences.
+            
+            Beyond coding, I'm always eager to learn new technologies and stay updated with industry trends. I enjoy collaborating with teams, sharing knowledge, and contributing to innovative projects that make a real impact.</p>
+    </section>
+
+    <section id="skills" >
+        <h2 style="text-align: left;">Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align: left;">Projects</h2>
+
+        <div class="project">
+            <img src="https://play-lh.googleusercontent.com/lJp6Yvi9jM_WPdo78z-e2VnviUZJHEXZgf5WoOB-STSEATAVniG0XZLFIOpRghFfzvU" alt="Project 1" style="height: 26% ;width: 75%;">
+            <h3>Online Code Compiler using Node.js</h3>
+            <p>An online compiler using Node.jsallows developers to write, compile, and execute Node.jscode directly in their web browsers without the need for local installations. This is particularly beneficial for beginners, educational purposes, and quick testing of code snippets. Such online compilers are typically user-friendly, providing features like syntax highlighting, code suggestions, and error checking to enhance the coding experience. They support various Node.jslibraries, allowing developers to experiment with different functionalities and frameworks.</p>
+        </div>
+        <div class="project">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeRhAUdf3FgfLt-MQub0aCFsP_xmzMOrz0A&s" alt="Project 2">
+            <h3>QR Code Generator</h3>
+            <p>Creating a QR Code Generator with Node.jsis a straightforward and efficient process. Start by setting up your project and installing Node.jsand npm if you haven't already. Create a new project folder, initialize the project using npm init -y, and install the qrcode package with npm install qrcode. In your project folder, create an index.js file and write a script to generate QR codes. By utilizing the QRCode.toFile method, you can generate a QR code that encodes any text or URL and save it as an image file. For example, the script can encode the URL 'https://example.com' into a QR code and save it as 'qrcode.png'. This method leverages asynchronous functions for efficient processing, and with just a few lines of code, you can customize the content of your QR codes.</p>
+        </div>
+        <div class="project">
+            <img src="https://i.ytimg.com/vi/I9fNyYl4_yo/hqdefault.jpg" alt="Project 1" style="height: 26% ;width: 75%;">
+            <h3>Dice Rolling App using ReactJS</h3>
+            <p>The Dice Rolling App is a user-friendly web application developed using ReactJS. The primary purpose of the app is to allow users to roll a virtual dice and receive a random number between 1 and 6, mirroring the experience of rolling a physical dice. The app features a visually appealing representation of the dice, displaying the face corresponding to the number rolled. Users can initiate a dice roll by clicking a button, which triggers a function to generate a random number and update the state of the app. Additionally, the app includes an option to reset the dice, providing a fresh start for the next roll. The app is built with a simple structure comprising an App component and a Dice component.   </p>
+        </div>
+        
+        
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <h3>Software Engineer - Daipon</h3>
+            <p><strong>Duration:</strong> Oct 2024 - Present</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Developed and maintained web applications using React and Node.js.</li>
+                <li>Collaborated with designers and backend developers to enhance UI/UX.</li>
+                <li>Optimized website performance and improved load times.</li>
+            </ul>
+        </div>
+    
+        <div class="job">
+            <h3>Web Developer Intern - Codsoft </h3>
+            <p><strong>Duration:</strong> Jan 2025 - Feb 2025</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Assisted in front-end development using HTML, CSS, and JavaScript.</li>
+                <li>Worked on responsive web design to ensure mobile compatibility.</li>
+                <li>Integrated APIs and improved website functionality.</li>
+            </ul>
+        </div>
+    </section>
+;    
+    
+    <section id="resume">
+        <h2>Resume</h2>
+      
+        <p>Download my resume to learn more about my experience and qualifications.</p>
+        <a href="your-resume.pdf" download>
+            <button style="background-color: rgb(0, 0, 0); color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                Download My Resume
+            </button>
+        </a>
+    </section>  
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ragulnath12014@gmail.com</p>
+        <p>Phone: 8438314966</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>
